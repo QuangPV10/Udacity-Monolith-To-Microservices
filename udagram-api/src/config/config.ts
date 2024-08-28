@@ -1,3 +1,4 @@
+require('dotenv').config();
 export const config = {
   'username': process.env.POSTGRES_USERNAME,
   'password': process.env.POSTGRES_PASSWORD,
@@ -6,7 +7,7 @@ export const config = {
   'dialect': 'postgres',
   'aws_region': process.env.AWS_REGION,
   'aws_profile': process.env.AWS_PROFILE,
-  'aws_media_bucket': process.env.AWS_BUCKET,
+  'aws_media_bucket': "monolith-to-microservices",
   'url': process.env.URL,
   'jwt': {
     'secret': process.env.JWT_SECRET,
