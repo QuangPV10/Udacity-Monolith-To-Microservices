@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: monolith-to-microservices
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: testing
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: cdr.c1r6smdcgv7r.us-east-1.rds.amazonaws.com
+  URL: ad97f6f044d084fecbffd20c188d2bda-92131604.us-east-1.elb.amazonaws.com 
+metadata:
+  name: env-config

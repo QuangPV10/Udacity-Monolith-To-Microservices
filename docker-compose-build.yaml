@@ -8,17 +8,11 @@ services:
     build:
       context: ./udagram-api-user
     image: udagram-api-user
-    env_file:
-      - .env
   backend_feed:
     build:
       context: ./udagram-api-feed
     image: udagram-api-feed
-    env_file:
-      - .env
   frontend:
     build:
       context: ./udagram-frontend
     image: udagram-frontend:local
-    env_file:
-      - .env
